@@ -1,0 +1,327 @@
+/*---------------Estilos CSS---------------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+/*-------------------- Estilos Generales-----------------------------*/
+
+
+body{
+    position: relative;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 30px auto;
+    padding: 15px 30px;
+    font-family: 'Noto Serif JP', serif; 
+    background-color: white;
+    background-image:url(imagenes/misoshiru.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    
+    
+    
+} 
+
+.navegacion a{
+    
+    display: block;
+    text-decoration:none;
+    color: white;
+    border-bottom: 1px solid white;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 20px;
+       
+}
+
+
+.navegacion a:active{
+    color:#bb5b38;
+}
+
+
+
+.lanzador-menu{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 6px 10px;
+    background-color: black;
+    max-width: 75px;
+    border-radius: 3px;
+    font-family: 'Noto Serif JP', serif;
+      
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+    /*! border-bottom: 2px solid white; */
+    font-family: 'Noto Serif JP', serif;
+    display: inline-block;
+    margin-left: 28%;
+    margin-bottom: 3%;
+    margin-top: 5%;
+}
+
+h2{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 2%;
+    color: white;
+    font-family: 'Noto Serif JP', serif;
+    
+}
+
+    
+
+.Contenedor1{
+    
+    width:95%;
+    min-height: 1000px;
+    margin: auto;
+    margin-bottom: 5%;
+    overflow: hidden;
+    
+}
+
+
+.Columna1{
+    
+    width: 100%;
+    min-height: 400px;
+    margin-top: 3%;
+    margin-left: 5%;
+    float:none;
+    padding: 1%;
+    background-color: white;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 16px;
+    background-image:url(imagenes/1426831200_142683_1426831200_noticia_normal.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    border-radius: 100px;
+}
+
+.Columna2{
+    
+    width: 100%;
+    min-height: 400px;
+    margin-top: 3%;
+    margin-left: 5%;
+    float:none;
+    padding: 1%;
+    background-color: white;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 16px;
+    background-image:url(imagenes/come-riconoscere-se-il-sushi-e%CC%80-fresco-638x425.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    border-radius: 100px;
+    
+}
+
+
+.Columna3{
+    
+    width: 100%;
+    min-height: 400px;
+    margin-top: 3%;
+    margin-left: 5%;
+    float:none;
+    padding: 1%; 
+    background-color: white;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 16px;
+    
+}
+
+.Columna4{
+    
+    width: 100%;
+    min-height: 400px;
+    margin-top: 3%;
+    margin-left: 5%;
+    float:none;
+    padding: 1%;
+    background-color: white;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 16px;
+    
+}
+
+
+a{
+    font-family: 'Noto Serif JP', serif;
+    font-size: 20px;
+    color: #2cb0f1;
+}
+
+
+@media screen and (max-width: 700px){
+    
+    .js .navegacion{
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .5s;
+        position: absolute;
+        top: 60px;
+        left: 30px;
+        right: 30px;
+        background-color: #3c1d11d6;
+    }
+    
+    .js .navegacion .a{
+        padding: 5px 10px;
+        color: #FFF;
+        border-top: 1px solid rgba(255, 255, 255, .4);
+            
+    }
+    
+    .js .navegacion.menu-desplegado{
+        max-height: 200px;
+    }
+        
+}
+
+
+
+
+@media screen and (min-width: 701px){
+    
+    
+    h1{
+       font-size: 60px; 
+    }
+    h2{
+       font-size: 31px; 
+    }
+    
+    .Columna1,
+    .Columna2{
+        width: 40%;
+        float: left;
+        font-size: 20px;
+    }
+    .Columna3,
+    .Columna4{
+        width: 40%;
+        float: left;
+        height: 50px;
+        overflow: auto;
+        font-size: 20px;
+    }
+    
+    .lanzador-menu{
+        display: none;
+        
+    }
+    
+    .navegacion {
+        position: absolute;
+        top: -20px;
+        left: 113px;
+    }
+    
+    body{
+        margin-top: 60px;
+      
+    }
+    .navegacion a{
+        font-size: 25px;
+        
+    }
+    .navegacion li{
+        
+        display: inline-block;
+        margin-right: 15px;
+        
+    }
+    a{
+     font-size: 25px;   
+    }
+   
+}
+
+
+@media screen and (min-width: 1200px){
+    .Columna1,
+    .Columna2,
+    .Columna3,
+    .Columna4{
+        width: 20%;
+       
+}
+    h1{
+       font-size: 70px; 
+    }
+    h2{
+       font-size: 40px; 
+    }
+    
+}
+
+
+
